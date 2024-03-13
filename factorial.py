@@ -2,8 +2,11 @@ def mult(a, b):
     """
         Multiplies two numbers without using the * operator
     """
-    if a == 0 or b == 0: return 0
-    return a / (1 / b)
+    res = 0
+    for i in range(b):
+        res += a
+    return res
+
 
 def factorial(n):
     if n == 0:
